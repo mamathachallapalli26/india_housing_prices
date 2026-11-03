@@ -1,6 +1,6 @@
 """
 PropVista India - Smart Property Investment Intelligence
-Run:  streamlit run app.py      (needs cleaned_housing_data.csv -> run clean_data.py first)
+Run:  streamlit run app.py      (needs cleaned_housing_data_24MB.csv -> run clean_data.py first)
 """
 import numpy as np
 import pandas as pd
