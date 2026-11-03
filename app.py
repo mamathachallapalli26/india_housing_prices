@@ -1,6 +1,7 @@
 """
 PropVista India - Smart Property Investment Intelligence
 Run:  streamlit run app.py      (needs cleaned_housing_data_24MB.csv -> run clean_data.py first)
+
 """
 import numpy as np
 import pandas as pd
@@ -74,7 +75,7 @@ button[data-baseweb="tab"] p{font-size:1.2rem !important;font-weight:700;color:#
 # ------------------------------------------------------------------ DATA
 @st.cache_data(show_spinner="Loading 250,000 listings...")
 def load():
-    d = pd.read_csv("cleaned_housing_data.csv")
+    d = pd.read_csv("cleaned_housing_data_24MB.csv,low-memory=false)("cleaned_housing_data.csv")
     d["Good_Investment_%"] = d["Good_Investment"] * 100
     return d
 
